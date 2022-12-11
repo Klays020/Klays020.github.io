@@ -1,0 +1,400 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+::-webkit-scrollbar{
+    width: 14px;
+    background-color: #5d2d2dc5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 60px;
+    background-image: linear-gradient(180deg, #c588a8 0%, #f0c796 99%);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    border-radius: 60px;
+    background-image: linear-gradient(180deg, #e9ac48 0%, #eb8876 99%);
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(229, 243, 242);
+    background-image: linear-gradient(0deg, #c588a8 0%, #f0c796 99%);
+    font-size: 16px;
+}
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 50px;
+    background-color: rgba(174, 162, 136, 0.99);
+    background-image: linear-gradient(180deg, #ac759298 0%, #f0c796 99%);
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+.logo{
+    position: relative;
+    font-weight: 700;
+    padding: 0 12px 3px 0;
+    font-size: 32px;
+    line-height: 100%;
+    color: #F7EF8A;
+    line-height: 1;
+    margin-left: 33px;
+}
+.logo::before{
+    content: '';
+    display: block;
+    background-image: url(../img/new_icons/m_oscar.png);
+    width: 32px;
+    height: 33px;
+    position: absolute;
+    left: -33px;
+    bottom: 2px;
+}
+
+.nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.nav-button{
+    display: none;
+}
+.nav-link{
+    color: rgb(229, 243, 242);;
+}
+.nav-link.active{
+    color: #d71757;
+}
+.container-title{
+    width: 100%;
+    height: 45vh;
+    background-image: linear-gradient(90deg, #c588a8 0%, #f0c796 99%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-title h2{
+    position: relative;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 15px;
+    color: #e4165e89;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+.container-title p{
+    margin-top: 3.8em;
+    font-size: 1.25em;
+    font-weight: 500;
+    max-width: 50%;
+    text-align: center;
+}
+
+.selection-gradient2{
+    padding: 20px 20px;
+    background-color: rgba(234, 224, 202, 0.99);
+    text-align:center;
+}
+
+.title-1.one{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.title-1.other{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.card-hero{
+    position: relative;
+    width: 600px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.408);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    align-self: center;
+    justify-self: center;
+}
+.card-name{
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: rgba(236, 175, 175, 0.408);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+.card-hero .imgBx{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 200px;
+    background: #000;    
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+}
+.card-hero .imgBx img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-hero .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.card-hero .content h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #cbc6ef;
+    line-height: 1.2em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.card-hero .content h2 span{
+    font-size: 0.55em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.card-hero .content p{
+    margin: 0 10px;
+}
+.card-hero .content a{
+    position: absolute;
+    left: 36%;
+    bottom: 50px;
+    display: inline-block;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background: linear-gradient(315deg,#6166b3ac,#4d3c6f89);
+    margin-top: 10px;
+    text-decoration: none;
+}
+.container-Hollywood{
+    width: 100%;
+    padding: 100px 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.container-hero{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px,1fr));
+    grid-gap: 80px 20px;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.card-Hollywood{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(315deg,#17D7A0,#6166B3);
+    margin-bottom: 100px;
+}
+.card-Hollywood:nth-child(2){
+    background: linear-gradient(315deg,#17D7A0,#6166B3);
+}
+.card-Hollywood:nth-child(3){
+    background: linear-gradient(315deg,#32C1CD,#b361a8);
+}
+.card-Hollywood:nth-child(4){
+    background: linear-gradient(315deg,#f7e816,#7b6bd4);
+}
+.card-Hollywood:nth-last-child(){
+    margin-bottom: 0;
+}
+.card-Hollywood img{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+.card-Hollywood:hover img{
+    left: 80%;
+    height: 500px;
+}
+.card-Hollywood:hover .GFimg{
+    left: 85%;
+}
+.card-Hollywood .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.card-Hollywood:hover .content{
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+.card-Hollywood .content h2{
+    color: #cbc6ef;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+    font-weight: 500;
+}
+.card-Hollywood .content p{
+    color: aliceblue;
+}
+.card-Hollywood .content a{
+    position: relative;
+    display: inline-block;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background: linear-gradient(315deg,#6166B3,#17D7A0) ;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.card-Hollywood .content .btn_watch{
+    background: linear-gradient(315deg,#6166B3,#32C1CD) ;
+}
+
+@media( max-width: 991px){
+    .card-Hollywood{
+        position: relative;
+        width: auto;
+        max-width: 610px;
+        align-items: flex-start;
+        transition: 0.5s;
+    }
+    .card-Hollywood:hover{
+        height: 600px;
+    }
+    .card-Hollywood:hover img,
+    .card-Hollywood:hover .GFimg {
+        left: 50%;
+        height: 350px;
+    }
+    .card-Hollywood .content{
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
+@media( max-width: 420px){
+    .card-Hollywood .content{
+        padding: 30px;
+    }
+    .card-Hollywood:hover img,
+    .card-Hollywood:hover .GFimg {
+        height: 300px;
+    }
+}
+
+
+.title-1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+.contacts {
+    background-image: linear-gradient(180deg, #d296b576 0%, #f0c796 99%);
+    padding: 90px 0;
+    text-align: center;
+}
+.contacts-title {
+    margin-bottom: 40px;
+}
+.contacts-content {
+    margin: 0 auto 40px;
+    max-width: 480px;
+    font-size: 18px;
+}
+.contacts-content p + p {
+    margin-top: 1em;
+}
+.contacts-button {
+    margin-bottom: 80px;
+}
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-bottom: 40px;
+    color: #cbc6ef;
+}
+.fa-brands{
+    font-size: 40px;
+    color: #cbc6ef;
+    transition: 0.5s;
+}
+.fa-brands:hover{
+    color: #F7EF8A;
+}
+.contacts-footer {
+    color: #F7EF8A;
+}
+.btn {
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: #F7EF8A;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #000;
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #d8aa6d;;
+}
+.btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}

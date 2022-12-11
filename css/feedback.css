@@ -1,0 +1,321 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+::-webkit-scrollbar{
+    width: 14px;
+    background-color: #5d2d2dc5;
+}
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 60px;
+    background-image: linear-gradient(180deg, #c588a8 0%, #f0c796 99%);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    border-radius: 60px;
+    background-image: linear-gradient(180deg, #e9ac48 0%, #eb8876 99%);
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(229, 243, 242);
+    background-image: linear-gradient(0deg, #c588a8 0%, #f0c796 99%);
+    font-size: 16px;
+}
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 50px;
+    background-color: rgba(174, 162, 136, 0.99);
+    background-image: linear-gradient(180deg, #ac759298 0%, #f0c796 99%);
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+.logo{
+    position: relative;
+    font-weight: 700;
+    padding: 0 12px 3px 0;
+    font-size: 32px;
+    line-height: 100%;
+    color: #F7EF8A;
+    line-height: 1;
+    margin-left: 33px;
+}
+.logo::before{
+    content: '';
+    display: block;
+    background-image: url(../img/new_icons/m_oscar.png);
+    width: 32px;
+    height: 33px;
+    position: absolute;
+    left: -33px;
+    bottom: 2px;
+}
+
+.nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.nav-button{
+    display: none;
+}
+.nav-link{
+    color: rgb(229, 243, 242);;
+}
+.nav-link.active{
+    color: #d71757;
+}
+.container-title{
+    width: 100%;
+    height: 45vh;
+    background-image: linear-gradient(90deg, #c588a8 0%, #f0c796 99%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-title h2{
+    position: relative;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 15px;
+    color: #e4165e89;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+.container-title p{
+    margin-top: 3.8em;
+    font-size: 1.25em;
+    font-weight: 500;
+    max-width: 50%;
+    text-align: center;
+}
+
+.title-1.one{
+    margin-bottom: 100px;
+}
+.title-1.other{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+@media(max-width:1235px){
+    .blog-post-imgBox{
+        transform: translateX(-40px);
+    }
+}
+@media(max-width:950px){
+    .blog-post{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .blog-post-imgBox{
+        transform: translateX(0);
+    }
+}
+@media(max-width:570px){
+    .blog-post{
+        transform: scale(0.8) ,translateY(20px);
+        padding: 20px;
+    }
+    .blog-post-imgBox{
+        transform: scale(0.8);
+    }
+}
+@media(max-width:420px){
+    .blog-post-imgBox{
+        transform: scale(0.6);
+    }
+}
+@media(max-width:420px){
+    .blog-post-imgBox{
+        transform: scale(0.5);
+    }
+    .blog-post{
+        padding: 10px;
+    }
+}
+.title-1 {
+    margin-top: 25px;
+    font-size: 34px;
+    font-weight: 600;
+}
+.contacts {
+    background-image: linear-gradient(0deg, #d296b576 0%, #f0c796 99%);
+    padding: 90px 0;
+    text-align: center;
+}
+.contacts-title {
+    margin-bottom: 40px;
+}
+.contacts-content {
+    margin: 0 auto 40px;
+    max-width: 480px;
+    font-size: 18px;
+}
+.contacts-content p + p {
+    margin-top: 1em;
+}
+.contacts-button {
+    margin-bottom: 80px;
+}
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-bottom: 40px;
+    color: #cbc6ef;
+}
+.fa-brands{
+    font-size: 40px;
+    color: #cbc6ef;
+    transition: 0.5s;
+}
+.fa-brands:hover{
+    color: #F7EF8A;
+}
+.contacts-footer {
+    color: #F7EF8A;
+}
+.btn {
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: #F7EF8A;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #000;
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #d8aa6d;;
+}
+.btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}
+
+.selection-gradient2{
+    padding: 90px 0;
+    height: 550px;
+    background-color: #f0c796;
+    text-align:center;
+}
+#selection-xy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-name{
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 160px;
+    background: rgba(236, 175, 175, 0.408);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+#section-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-6 .modal-stars {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 100px;
+    background-color:  #8f4169a7;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    margin-top: -20px;
+}
+
+#section-6 .modal-stars .stars {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 2rem 0;
+    letter-spacing: 0.3rem;
+}
+
+#section-6 .modal-stars .stars-content {
+    position: relative;
+    display: none;
+    padding-left: 0.5rem;
+}
+
+#section-6 .modal-stars .stars-content h2 {
+    color: yellow;
+    margin-bottom: 1em;
+}
+
+#section-6 .modal-stars .stars-content .stars-result {
+    display: none;
+}
+
+#section-6 .modal-stars .stars-content .experience {
+    width: 100%;
+    height: 70px;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1rem;
+    background: #3c4757;
+    color: yellow;
+    outline: none;
+}
+
+#section-6 .modal-stars .stars-content .send-review {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background: #353e4b;
+    border: none;
+    color: #65737e;
+}
+
+#section-6 .modal-stars .stars-content .send-review:hover {
+    color: yellow;
+}
+
+#section-6 .modal-review {
+    position: relative;
+    display: none;
+    width: 300px;
+    height: 90px;
+    background-color:  #8f4169a7;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#section-6 .modal-review .change {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: transparent;
+    border: none;
+    color: #65737e;
+}
