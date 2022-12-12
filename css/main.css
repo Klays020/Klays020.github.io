@@ -267,6 +267,7 @@ p3{
     backdrop-filter: blur(10px);
     z-index: 1;
     transition: 0.5s;
+    width: auto;
 }
 .box-gradient:hover .content{
     left: -25px;
