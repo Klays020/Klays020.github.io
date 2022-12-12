@@ -183,6 +183,15 @@
         width: 200px;
         height: 200px;
     }
+        .box-gradient{
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
     .box-gradient::before{
         content: '';
         position: relative;
