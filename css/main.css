@@ -462,3 +462,40 @@ p3{
     top: 1px;
     background-color: #000000;
 }
+
+@media(max-width: 320px){
+    .header-img::before{
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 75px;
+        width: 200px;
+        height: 200px;
+    }
+    .box-gradient::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 30%;
+        height: 75%;
+        background: #F7EF8A;;
+        border-radius: 8px;
+        transform: skewX(15deg);
+        transition: 0.5s;
+    }
+    .box-gradient::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 30%;
+        height: 75%;
+        background: #462626;
+        border-radius: 8px;
+        transform: skewX(15deg);
+        transform: 0.5s;
+        filter: blur(30px);
+        transition: 0.5s;
+    }
+}
