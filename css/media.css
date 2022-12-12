@@ -213,13 +213,11 @@
         z-index: 1;
         position: relative;
         left: 0;
-        padding: 20px 40px;
+        padding: 0px 0px;
         background: rgba(0,0,0,0.1);
         border-radius: 8px;
         backdrop-filter: blur(10px);
         z-index: 1;
         transition: 0.5s;
-        width: 200px;
-        height: 300px;
     }
 }
