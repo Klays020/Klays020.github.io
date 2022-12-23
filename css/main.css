@@ -133,8 +133,8 @@ p3{
 }
 .selection-gradient .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 260px);
-    gap: 260px;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 240px;
     justify-content: center;
 }
 .box-gradient{
