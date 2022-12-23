@@ -133,8 +133,8 @@ p3{
 }
 .selection-gradient .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
-    gap: 240px;
+    grid-template-columns: repeat(auto-fill, 260px);
+    gap: 260px;
     justify-content: center;
 }
 .box-gradient{
@@ -181,14 +181,12 @@ p3{
 .box-gradient:nth-child(1)::before,
 .box-gradient:nth-child(1)::after{
     background: linear-gradient(315deg, #cb5e5e,#521e24);
-    left: 10px;
 }
 
 .box-gradient:nth-child(2)::before,
 .box-gradient:nth-child(2)::after{
     background: linear-gradient(315deg, #6166B3,#32C1CD);
     transform: skewX(-15deg);
-        left: 10px;
 }
 .box-gradient:nth-child(3)::before,
 .box-gradient:nth-child(3)::after{
@@ -198,13 +196,12 @@ p3{
 .box-gradient:nth-child(4)::after{
     background: linear-gradient(315deg, #dda46e,#82333d);
     transform: skewX(-15deg);
-        left: 10px;
 }
 .box-gradient span{
     display: block;
     position: absolute;
     height: 25%;
-    width:30%;
+    width: 30%;
     top: 0;
     right: 0;
     left: 0;
@@ -263,14 +260,13 @@ p3{
 .box-gradient .content{
     z-index: 1;
     position: relative;
-    left: -15px;
+    left: -20px;
     padding: 20px 40px;
     background: rgba(0,0,0,0.1);
     border-radius: 8px;
     backdrop-filter: blur(10px);
     z-index: 1;
     transition: 0.5s;
-    width: auto;
 }
 .box-gradient:hover .content{
     left: -25px;
@@ -301,8 +297,8 @@ p3{
 }
 .container-glass{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 260px);;
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, 280px);;
+    gap: 60px;
     justify-content: center;
 }
 .container-glass .card{
@@ -318,21 +314,19 @@ p3{
     align-items: center;
     backdrop-filter: blur(5px);
     transition: 0.5s;
-    padding-left: -500px;
 }
-.container-glass .card:nth-child(1)::before,
-.container-glass .card:nth-child(1)::after{
+.container-glass .card:nth-child(1),
+.container-glass .card:nth-child(1){
+    background: linear-gradient(315deg, #5eb7cb,#1e3c52);
+    left: 10px;
+    padding-right: 50px;
+}
+.container-glass .card:nth-child(2),
+.container-glass .card:nth-child(2){
     background: linear-gradient(315deg, #cb5e5e,#521e24);
     left: 10px;
     padding-right: 50px;
 }
-.container-glass .card:nth-child(2)::before,
-.container-glass .card:nth-child(2)::after{
-    background: linear-gradient(315deg, #cb5e5e,#521e24);
-    left: 10px;
-    padding-right: 50px;
-}
-
 .container-glass .card:hover{
     transform: scale(1.1);
 }
@@ -481,6 +475,7 @@ p3{
     background-color: #000000;
 }
 
+
 @media(max-width: 320px){
     .header-img::before{
         margin: auto;
@@ -506,7 +501,7 @@ p3{
         content: '';
         position: absolute;
         top: 0;
-        left: -10px;
+        left: 10px;
         width: 30%;
         height: 75%;
         background: #462626;
