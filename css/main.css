@@ -319,6 +319,14 @@ p3{
     backdrop-filter: blur(5px);
     transition: 0.5s;
 }
+
+}
+.container-glass .card:nth-child(1)::before,
+.container-glass .card:nth-child(1)::after{
+    background: linear-gradient(315deg, #cb5e5e,#521e24);
+    left: 10px;
+}
+
 .container-glass .card:hover{
     transform: scale(1.1);
 }
