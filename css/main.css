@@ -181,12 +181,14 @@ p3{
 .box-gradient:nth-child(1)::before,
 .box-gradient:nth-child(1)::after{
     background: linear-gradient(315deg, #cb5e5e,#521e24);
+    left: 10px;
 }
 
 .box-gradient:nth-child(2)::before,
 .box-gradient:nth-child(2)::after{
     background: linear-gradient(315deg, #6166B3,#32C1CD);
     transform: skewX(-15deg);
+        left: 10px;
 }
 .box-gradient:nth-child(3)::before,
 .box-gradient:nth-child(3)::after{
@@ -196,6 +198,7 @@ p3{
 .box-gradient:nth-child(4)::after{
     background: linear-gradient(315deg, #dda46e,#82333d);
     transform: skewX(-15deg);
+        left: 10px;
 }
 .box-gradient span{
     display: block;
@@ -304,7 +307,7 @@ p3{
 }
 .container-glass .card{
     position: relative;
-    max-width: 560px;
+    max-width: 540px;
     height: 400px;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     border-radius: 15px;
