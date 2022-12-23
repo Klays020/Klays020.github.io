@@ -489,7 +489,7 @@ p3{
         content: '';
         position: absolute;
         top: 0;
-        left: 10px;
+        left: -10px;
         width: 30%;
         height: 75%;
         background: #462626;
