@@ -128,7 +128,7 @@ body{
     transition: 0.5s;
     align-self: center;
     justify-self: center;
-    padding-left: 10px;
+    padding-left: 12px;
 }
 .card-name{
     display: flex;
@@ -336,7 +336,9 @@ body{
     .card-Hollywood:hover .GFimg {
         height: 300px;
     }
-
+    .container-title{
+        font-size: 1.4em;
+    }
     .card-hero{
         width: 580px;
         margin-left: 10px;
