@@ -298,8 +298,8 @@ p3{
 }
 .container-glass{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 280px);;
-    gap: 60px;
+    grid-template-columns: repeat(auto-fit, 260px);;
+    gap: 50px;
     justify-content: center;
 }
 .container-glass .card{
