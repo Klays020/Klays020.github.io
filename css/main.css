@@ -263,7 +263,7 @@ p3{
 .box-gradient .content{
     z-index: 1;
     position: relative;
-    left: 0;
+    left: -15px;
     padding: 20px 40px;
     background: rgba(0,0,0,0.1);
     border-radius: 8px;
