@@ -345,7 +345,8 @@ body{
     }
     .container-title h2{
         font-size: 2.5em;
-        font-weight: 600;
+        font-weight: 500px;
+        letter-spacing: 6px;
     }
 }
 
