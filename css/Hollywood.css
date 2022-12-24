@@ -343,6 +343,10 @@ body{
         width: 580px;
         margin-left: 10px;
     }
+    .container-title h2{
+        font-size: 3em;
+        font-weight: 680;
+    }
 }
 
 
