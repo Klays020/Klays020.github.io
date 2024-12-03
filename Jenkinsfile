@@ -5,14 +5,14 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out the code...'
-                sh 'echo "Code checked out"'
+                bat 'echo "Code checked out"'
             }
         }
 
         stage('Build') {
             steps {
                 echo 'Building the application...'
-                sh 'sleep 2'
+                bat 'timeout /t 2 >nul'
                 echo 'Build completed.'
             }
         }
@@ -20,7 +20,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'sleep 2'
+                bat 'timeout /t 2 >nul'
                 echo 'All tests passed.'
             }
         }
@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
-                sh 'sleep 2'
+                bat 'timeout /t 2 >nul'
                 echo 'Application deployed successfully.'
             }
         }
